@@ -1,0 +1,77 @@
+@charset "EUC-KR";
+#content .ui,.header{ /* 제목 */
+	font-family: '배달의민족 주아';
+	display: block;
+	font-size: 5em;
+	margin-bottom: 10%;
+	color : white;
+}
+
+#content #send { /* 전송버튼 */
+	margin-top: 4%;
+	width: 200px;
+	height: 100px;
+}
+
+#content span { /* 전송글씨크기 */
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+tr, td, table {
+	border: none;
+	padding: 0px;
+}
+table{
+margin-left:-3.5em;
+}
+td{
+	display: inline-block;
+    width: 220px;
+    height: 320px;
+}
+tr{
+    display: inline-block;
+    width: max-content;
+}
+
+.animate-getout{
+	animation-name : getout;
+	animation-duration : 0.5s;
+	position: relative;
+    width:220px;
+    height:320px;
+    opacity: 1;
+   background: none;
+}
+
+@keyframes getout{
+0%{bottom:0px;}
+50%{bottom:30px;}
+100%{bottom:0px;}
+}
+
+.books{
+background-color : black;
+}
+.books img{
+opacity: 0.4;
+transition : width 0.9s, height 0.9s, transform 0.9s;
+}
+/* ==================================도서 강조효과 */
+.books img:hover {
+    width:220px;
+    height:320px;
+    opacity: 1;
+}
+#lion{
+visibility: hidden;
+width : 350px;
+height: 0px;
+background: url(../img/loading.gif);
+background-size: cover;
+z-index: 3;
+position: fixed;
+top : 30%;
+left: 40%;
+}

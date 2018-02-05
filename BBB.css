@@ -1,0 +1,27 @@
+@charset "EUC-KR";
+body {
+	width:100%;
+	height : 100%;
+	margin: 0;
+	overflow: overlay;
+    background: linear-gradient(to bottom right , #263238, #37474F);
+}
+#content { /* ÄÜÅÙÃ÷ ¹­À½  */
+	width: 1000px;
+	height: 100%;
+	vertical-align: middle;
+	padding-top: 5%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.animate-bottom{
+animation-name : animationBottom;
+animation-duration : 2s;
+position: relative;
+}
+
+@keyframes animationBottom{
+from{bottom:-100px; opacity: 0}
+to{bottom:0px; opacity:1}
+}
